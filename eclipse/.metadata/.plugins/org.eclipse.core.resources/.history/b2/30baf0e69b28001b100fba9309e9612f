@@ -1,0 +1,14 @@
+package com.hexopia.mod.objects.blocks;
+
+import com.hexopia.mod.util.interfaces.IHasModel;
+
+import net.minecraft.block.Block;
+
+public class BlockBasic extends Block implements IHasModel
+{
+	@Override
+	public void registerModels() {
+		// TODO Auto-generated method stub
+		
+	}
+}

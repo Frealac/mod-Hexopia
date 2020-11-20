@@ -1,0 +1,18 @@
+package com.hexopia.mod.objects.items;
+
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class ModBack
+{
+	public static Item ITEM_BACKPACK;
+
+	public static final void registerItems() {
+		ITEM_BACKPACK = new ItemBackPack();
+	}
+
+	public static final void registerItemsCrafts() {
+		GameRegistry.addRecipe(new BackpackRecipe());
+	}
+}
+

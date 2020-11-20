@@ -1,0 +1,8 @@
+package com.hexopia.mod.objects.items.armor;
+
+import net.minecraft.item.Item;
+
+public class ArmorMod extends ItemAmor implements IHasModel
+{
+
+}

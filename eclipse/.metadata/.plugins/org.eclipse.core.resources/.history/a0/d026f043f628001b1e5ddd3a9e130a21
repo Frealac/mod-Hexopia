@@ -1,0 +1,7 @@
+package com.hexopia.mod.objects.items;
+
+import net.minecraft.item.Item;
+
+public class ItemShovelMod extends Item {
+
+}

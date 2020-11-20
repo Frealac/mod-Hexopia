@@ -1,0 +1,14 @@
+{
+    "type": "hexopiamod:",
+    "pattern": [
+        " i ",
+        " i ",
+        " / "
+    ],
+     "key": {
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+
+}

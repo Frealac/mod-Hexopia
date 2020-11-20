@@ -1,0 +1,21 @@
+package com.hexopia.mod.objects.blocks;
+
+import com.hexopia.mod.Main;
+import com.hexopia.mod.util.interfaces.IHasModel;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+
+public class BlockBasic extends Block implements IHasModel
+{
+	
+	public public BlockBasic(String name, Material material) 
+	{
+		
+	}
+	
+	@Override
+	public void registerModels() {
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0);
+	}
+}

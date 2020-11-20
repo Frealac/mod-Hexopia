@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ii",
+        "iii",
+        "   "
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:xuranium"
+            }
+    },
+    "result": {
+        "item": "hexopiamod:xuranium_chesplate",
+        "count": 1
+    }
+}

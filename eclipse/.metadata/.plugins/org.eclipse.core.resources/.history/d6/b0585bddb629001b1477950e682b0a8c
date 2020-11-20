@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  E",
+        " E ",
+        "/  "
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+            "item": "hexopiamod:katana",
+            "count": 1
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " i ",
+        " i ",
+        " / "
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:xuranium"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hexopiamod:xuranium_axe",
+        "count": 1
+    }
+}

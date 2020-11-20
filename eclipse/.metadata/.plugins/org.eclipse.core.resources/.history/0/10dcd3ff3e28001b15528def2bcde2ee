@@ -1,0 +1,9 @@
+package com.hexopia.mod.util;
+
+public class Reference 
+{
+	public static final String MODID = "";
+	public static final String MODID = "";
+	public static final String MODID = "";
+	public static final String MODID = "";
+}

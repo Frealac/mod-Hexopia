@@ -1,0 +1,21 @@
+package com.hexopia.mod.tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+
+public class CustomTab extends CreativeTabs
+{
+
+	public CustomTab(String label) 
+	{
+		super(label);
+		this.setBackgroundImageName(label + ".png");
+	}
+	
+	@Override
+	public ItemStack getTabIconItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.hexopia.mod;
+
+import com.hexopia.mod.util.Reference;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod(modid = Reference)
+public class Main 
+{
+
+}

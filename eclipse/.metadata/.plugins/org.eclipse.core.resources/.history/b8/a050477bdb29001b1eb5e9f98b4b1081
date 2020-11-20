@@ -1,0 +1,5 @@
+package com.hexopia.mod.world.generation;
+
+public class WorldGenCustomOres {
+
+}

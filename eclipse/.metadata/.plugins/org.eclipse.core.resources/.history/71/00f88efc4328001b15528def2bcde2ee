@@ -1,0 +1,44 @@
+package com.hexopia.mod;
+
+import org.apache.logging.log4j.core.Logger;
+
+import com.hexopia.mod.proxy.CommonProxy;
+import com.hexopia.mod.util.Reference;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.SidedProxy;
+
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
+public class Main 
+{
+	@Instance
+	public static Main instrance;
+	
+	@SidedProxy(clientSide = Reference.CLIENT, serveurSide = Reference.COMMUN)
+	public static CommonProxy proxy;
+	
+	public static Logger logger;
+	
+	@EventHandler
+	public static void preInit(FMLPreInitializationEvent e)
+	{
+		
+	}
+	
+	@EventHandler
+	public static void init(FMLInitializationEvent e)
+	{
+		
+	}
+	
+	@EventHandler
+	public static void postInit(FMLPreInitializationEvent e)
+	{
+		
+	}
+}
+
+

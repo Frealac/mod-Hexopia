@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:xuranium"
+            }
+    },
+    "result": {
+        "item": "hexopiamod:pikarium_chesplate",
+        "count": 1
+    }
+}

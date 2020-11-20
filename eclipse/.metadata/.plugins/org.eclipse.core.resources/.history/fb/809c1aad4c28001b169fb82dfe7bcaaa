@@ -1,0 +1,6 @@
+package com.hexopia.mod.objects.items;
+
+public class ItemBase 
+{
+
+}

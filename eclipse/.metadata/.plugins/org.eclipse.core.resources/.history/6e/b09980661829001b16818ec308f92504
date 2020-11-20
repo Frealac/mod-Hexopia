@@ -1,0 +1,11 @@
+package com.hexopia.mod.util.handlers;
+
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class RecipesHandler 
+{
+	public static void registerRecipes()
+	{
+		GameRegistry.addSmelting(XURANIUM_BLOCK, output, xp);
+	}
+}

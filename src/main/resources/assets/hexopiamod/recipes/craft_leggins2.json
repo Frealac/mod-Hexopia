@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "i i",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:pikarium"
+            }
+    },
+    "result": {
+        "item": "hexopiamod:pikarium_leggins",
+        "count": 1
+    }
+}

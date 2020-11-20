@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " i ",
+        " i ",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond_boots"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+}

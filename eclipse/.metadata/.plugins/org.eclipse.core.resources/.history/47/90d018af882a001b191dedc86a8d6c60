@@ -1,0 +1,36 @@
+package com.hexopia.mod.objects.items;
+
+public class ItemBackPack extends Item
+{
+	public static final String NAME = "backpack";
+
+	public ItemBackPack() {
+		this.setUnlocalizedName(TutorialMod.MODID + "_" + NAME);
+		this.setTextureName(TutorialMod.MODID + ":" + NAME);
+		this.setCreativeTab(CreativeTabs.tabTools);
+		this.maxStackSize = 1;
+
+		this.register();
+	}
+
+	/**
+	 * Used to add the item to the game registry
+	 */
+	public final void register() {
+		GameRegistry.registerItem(this, NAME);
+	}
+
+	/**
+	 * Used to open the gui
+	 */
+	@Override
+	public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
+		player.openGui(TutorialMod.INSTANCE, 0, world, (int) player.posX, (int) player.posY, (int) player.posZ);
+		return stack;
+	}
+
+	@Override
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean advanced) {
+		if (stack.getTagCompound() != null && stack.getTagCompound().hasKey("Color")) list.add("Color : " + stack.getTagCompound().getInteger("Color"));
+	}
+}

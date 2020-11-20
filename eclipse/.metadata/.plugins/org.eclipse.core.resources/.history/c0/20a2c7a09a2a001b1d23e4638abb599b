@@ -1,0 +1,20 @@
+package com.hexopia.mod.util.handlers;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+
+public class TickHandler {
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+//			proxy.registerRenders();
+//			FMLCommonHandler.instance().bus().register(new ServerTickHandler());
+	    FMLCommonHandler.instance().bus().register(new NewTickHandler());
+//			proxy.registerServerTickHandler();
+	    MinecraftForge.EVENT_BUS.register(new ModEntityHandler());
+	    MinecraftForge.EVENT_BUS.register(new DropHandler());
+//		    MinecraftForge.EVENT_BUS.register(new SoundLoadHandler());
+	    EntityRegistry.registerModEntity(EntityNewFishHook.class, "Entity New Fish Hook", 216, this, 75, 1, true);
+	}
+}

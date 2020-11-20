@@ -1,0 +1,19 @@
+package com.hexopia.mod.handler;
+
+public class BlockCanFallHandler
+{
+	@SubscribeEvent
+	public void onPlayerInteract(PlayerInteractEvent event) {
+		if (event.action == PlayerInteractEvent.Action.RIGHT_CLICK_BLOCK && event.entityPlayer.getHeldItem() != null && event.entityPlayer.getHeldItem().getItem() == Items.bone) {
+			if (event.world.getBlock(event.x, event.y, event.z) instanceof ICanFall) {
+				TutorialMod.LOGGER.info(((ICanFall) event.world.getBlock(event.x, event.y, event.z)).canBlockFall(event.world, event.x, event.y, event.z));
+			}
+		}
+	}
+
+	@SubscribeEvent
+	public void onBlockFallEvent(BlockFallingEvent event) {
+		TutorialMod.LOGGER.info("block falling");
+		if (event.world.getBlock(event.x, event.y, event.z) == Blocks.gravel) event.setCanceled(true);
+	}
+}

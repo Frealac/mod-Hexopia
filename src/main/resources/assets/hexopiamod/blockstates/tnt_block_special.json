@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "normal":
+        {
+            "model": "hexopiamod:tnt_block_special"
+        }
+    }
+}

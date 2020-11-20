@@ -1,0 +1,20 @@
+package com.hexopia.mod.util.handlers;
+
+import com.sun.jna.platform.dnd.DropHandler;
+
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+
+public class TickHandler {
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+//			proxy.registerRenders();
+//			FMLCommonHandler.instance().bus().register(new ServerTickHandler());
+	    FMLCommonHandler.instance().bus().register(new TickHandler());
+//			proxy.registerServerTickHandler();
+//		    MinecraftForge.EVENT_BUS.register(new SoundLoadHandler());
+	}
+}

@@ -1,0 +1,51 @@
+package com.hexopia.mod.util.handlers;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+
+public class TickHandler {
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+//			proxy.registerRenders();
+//			FMLCommonHandler.instance().bus().register(new ServerTickHandler());
+	    FMLCommonHandler.instance().bus().register(new TickHandler());
+//			proxy.registerServerTickHandler();
+//		    MinecraftForge.EVENT_BUS.register(new SoundLoadHandler());
+	}
+	@SubscribeEvent
+	 public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		EntityPlayer player = event.player;
+		InventoryPlayer inventory = player.inventory;
+		 }
+
+
+	 //Called when the client ticks. 
+	 @SubscribeEvent
+	 public void onClientTick(TickEvent.ClientTickEvent event) {
+
+	}
+
+	 //Called when the server ticks. Usually 20 ticks a second. 
+	 @SubscribeEvent
+	 public void onServerTick(TickEvent.ServerTickEvent event) {
+
+	}
+
+	 //Called when a new frame is displayed (See fps) 
+	 @SubscribeEvent
+	 public void onRenderTick(TickEvent.RenderTickEvent event) {
+
+	}
+
+	 //Called when the world ticks
+	 @SubscribeEvent
+	 public void onWorldTick(TickEvent.WorldTickEvent event) {
+
+	}
+	}
+}

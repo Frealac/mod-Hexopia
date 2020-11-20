@@ -1,0 +1,28 @@
+package com.hexopia.mod.objects.items.tools;
+
+import com.hexopia.mod.Main;
+import com.hexopia.mod.init.ItemInit;
+import com.hexopia.mod.util.interfaces.IHasModel;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemSpade;
+
+public class ItemShovelMod extends ItemSpade implements IHasModel
+{
+
+	protected ItemShovelMod(String name, ToolMaterial material) 
+	{
+		super(material);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(CreativeTabs.TOOLS);
+		ItemInit.ITEMS.add(this);
+	}
+	
+	@Override
+	public void registerModels()
+	{
+		Main.proxy.registerItemRenderer(this, 0);
+	}
+
+}

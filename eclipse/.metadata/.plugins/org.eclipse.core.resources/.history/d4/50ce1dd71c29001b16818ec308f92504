@@ -1,0 +1,14 @@
+package com.hexopia.mod.tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class CustomTab extends CreativeTabs
+{
+
+	public CustomTab(String label) 
+	{
+		super(label);
+		this.setBackgroundImageName(label) + ".png";
+	}
+
+}

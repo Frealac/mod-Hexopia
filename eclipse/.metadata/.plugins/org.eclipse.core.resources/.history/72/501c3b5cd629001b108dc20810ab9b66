@@ -1,0 +1,19 @@
+#Minecraft server properties
+#Wed Nov 18 20:42:32 CET 2020
+player-idle-timeout=0
+level-name=world
+resource-pack=
+online-mode=true
+gamemode=0
+difficulty=1
+spawn-animals=true
+server-ip=
+pvp=true
+server-port=25565
+allow-flight=false
+prevent-proxy-connections=false
+force-gamemode=false
+spawn-npcs=true
+generate-structures=true
+motd=A Minecraft Server
+resource-pack-sha1=

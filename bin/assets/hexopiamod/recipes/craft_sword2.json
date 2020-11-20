@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " i ",
+        " i ",
+        " / "
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:pikarium"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hexopiamod:pikarium_sword",
+        "count": 1
+    }
+}

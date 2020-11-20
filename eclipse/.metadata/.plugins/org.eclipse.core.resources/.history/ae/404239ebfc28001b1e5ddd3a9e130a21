@@ -1,0 +1,11 @@
+package com.hexopia.mod.objects.items.tools;
+
+import com.hexopia.mod.util.interfaces.IHasModel;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
+
+public class ItemSwordMod extends ItemSword implements IHasModel
+{
+	public ItemSwordMod(String name, ToolMaterial material)
+}

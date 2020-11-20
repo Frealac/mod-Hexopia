@@ -1,0 +1,5 @@
+package com.hexopia.mod.util.interfaces;
+
+public interface IHasModel {
+
+}

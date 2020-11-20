@@ -1,0 +1,45 @@
+package com.hexopia.mod;
+
+@Mod(modid = ModBack.MODID, name = ModBack.NAME, version = ModBack.VERSION)
+public class ModBack
+{
+	public static final String MODID = "";
+	public static final String NAME = "";
+	public static final String VERSION = "1.0.3";
+	/**
+	 * Logger used for debug
+	 */
+	public static final Logger LOGGER = LogManager.getLogger(NAME);
+
+	@Mod.Instance(MODID)
+	public static ModBack INSTANCE;
+
+	@SidedProxy(clientSide = "fr.scarex.tutorialmod.client.ClientProxy", serverSide = "fr.scarex.tutorialmod.CommonProxy")
+	public static CommonProxy PROXY;
+
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		TutorialModItems.registerItems();
+		TutorialModBlocks.registerBlocks();
+
+		PROXY.register();
+	}
+
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent event) {
+		TutorialModItems.registerItemsCrafts();
+		TutorialModBlocks.registerBlocksCrafts();
+
+		// Registering the gui handler
+		NetworkRegistry.INSTANCE.registerGuiHandler(INSTANCE, PROXY);
+	}
+
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		multiregister(new BlockCanFallHandler());
+	}
+
+	public static void multiregister(Object o) {
+		MinecraftForge.EVENT_BUS.register(o);
+	}
+}

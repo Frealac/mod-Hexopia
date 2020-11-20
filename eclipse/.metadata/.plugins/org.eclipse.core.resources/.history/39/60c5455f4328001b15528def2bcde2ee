@@ -1,0 +1,9 @@
+package com.hexopia.mod;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod
+public class Main 
+{
+
+}

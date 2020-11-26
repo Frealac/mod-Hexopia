@@ -28,7 +28,7 @@ public class BlockOreMod2 extends Block implements IHasModel
 		setCreativeTab(Main.TUTO_TAB);
 		setHardness(8.0F);
 		String toolClass = null;
-		setHarvestLevel("pickaxe", 4);
+		setHarvestLevel("pickaxe, hammer", 4);
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(name));
 	}

@@ -1,0 +1,7 @@
+package com.hexopia.mod.objects.items.armor;
+
+import net.minecraft.item.Item;
+
+public class ArmorMod3 extends Item {
+
+}

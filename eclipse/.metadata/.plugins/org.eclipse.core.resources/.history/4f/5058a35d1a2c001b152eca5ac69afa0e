@@ -1,0 +1,20 @@
+package com.hexopia.mod.objects.items.tools;
+
+import java.util.Set;
+
+import com.hexopia.mod.util.interfaces.IHasModel;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemTool;
+
+
+public class ItemArcMod extends ItemTool implements IHasModel
+{
+
+	protected ItemArcMod(float attackDamageIn, float attackSpeedIn, ToolMaterial materialIn,
+			Set<Block> effectiveBlocksIn) 
+	{
+		super(attackDamageIn, attackSpeedIn, materialIn, effectiveBlocksIn);
+	}
+ 
+}

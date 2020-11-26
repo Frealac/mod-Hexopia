@@ -1,0 +1,6 @@
+package com.hexopia.mod.objects.items.tools;
+
+public class obsidianBow {
+	obsidianBow= new obsidianBow.setUnlocalizedName("obsidianBow").setTextureName(MODID+ ":obsidian_bow").setCreativeTab(CreativeTabs.tabCombat);
+
+}

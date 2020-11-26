@@ -1,0 +1,8 @@
+package assets.hexopiamod.textures.entity.wither;
+
+public class Snippet {
+	public static void main(String[] args) {
+		wither_armor.png
+	}
+}
+

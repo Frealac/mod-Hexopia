@@ -1,6 +1,7 @@
 package com.hexopia.mod.util.handlers;
 
 import com.hexopia.mod.init.BlockInit;
+import com.hexopia.mod.init.FluidInit;
 import com.hexopia.mod.init.ItemInit;
 import com.hexopia.mod.util.interfaces.IHasModel;
 import com.hexopia.mod.world.generation.WorldGenCustomOres;
@@ -54,7 +55,10 @@ public class RegistryHandler
 	
 	public static void preInitRegistries()
 	{
+        FluidInit.registerFluids();
+        
         GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
+
 	}
 	
 	public static void initRegistries()

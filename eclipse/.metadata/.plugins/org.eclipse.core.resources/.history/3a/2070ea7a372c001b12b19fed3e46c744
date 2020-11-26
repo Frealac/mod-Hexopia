@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "III",
+        "III"
+    ],
+    "key": {
+        "I": {
+            "item": "hexopiamod:xuranium"
+    }
+    "result": {
+        "item": "hexopiamod:xuranium_block",
+        "count": 1
+    }
+}

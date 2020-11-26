@@ -14,7 +14,10 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 
 public class ItemSpecial extends Item implements IHasModel
@@ -22,21 +25,18 @@ public class ItemSpecial extends Item implements IHasModel
 
 	private EntityPlayer player;
 	private World world;
+	private EntityPlayer playerIn;
+	private	ItemStack ItemStack;
 
 	public ItemSpecial(String name)
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setDamage(1, 5);
+		onUsingTick(ItemStack, playerIn, 2000);
 		setMaxDamage(15);
 		setMaxStackSize(1);
 		setCreativeTab(Main.TUTO_TAB);
 		ItemInit.ITEMS.add(this);
-	}
-
-	private void setDamage(int i, int damage) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -48,16 +48,18 @@ public class ItemSpecial extends Item implements IHasModel
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) 
 	{
+		
 		if(!worldIn.isRemote)
 		{
 			playerIn.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 200, 1));
 			return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
+			
+			
+
 		}
 		else
 		{
 			return new ActionResult<ItemStack>(EnumActionResult.PASS, playerIn.getHeldItem(handIn));
 		}
 	}
-
-
 }

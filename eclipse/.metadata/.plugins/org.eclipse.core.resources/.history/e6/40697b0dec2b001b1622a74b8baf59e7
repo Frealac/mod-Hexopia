@@ -1,0 +1,6 @@
+package com.hexopia.mod.objects.entity;
+
+public class EntitySpectre extends EntitySpectre
+{
+
+}

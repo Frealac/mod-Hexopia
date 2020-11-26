@@ -1,0 +1,23 @@
+package com.hexopia.mod.init;
+
+import javax.swing.text.html.parser.Entity;
+
+import com.hexopia.mod.Main;
+import com.hexopia.mod.objects.entity.EntitySpectre;
+import com.hexopia.mod.util.Reference;
+
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+
+public class EntityInit
+{
+    public static void registerEntities()
+    {
+       registerEntity("spectre", EntitySpectre.class, 111, 50, 16765255, 1672485); 
+    }
+    
+    private static void registerEntity(String name, Class<EntitySpectre> class1, int id, int range, int color1, int color2)
+    {
+        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID + ":" + name), class1, name, id, Main.instance, range, 1, true, color1, color2);
+    }
+}

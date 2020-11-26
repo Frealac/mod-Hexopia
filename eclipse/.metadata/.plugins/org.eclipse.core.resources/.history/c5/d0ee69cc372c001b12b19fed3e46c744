@@ -1,0 +1,18 @@
+
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "hexopiamod:xuranium"
+        }
+    },
+    "result": {
+            "item": "hexopiamod:etix_blocks",
+        "count": 1
+        }
+}

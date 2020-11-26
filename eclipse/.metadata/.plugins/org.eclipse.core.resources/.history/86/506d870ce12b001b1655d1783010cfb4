@@ -1,0 +1,14 @@
+package com.hexopia.mod.objects.blocks;
+
+import net.minecraft.block.Block;
+
+public class CaveBlock extends Block
+{
+	public CaveBlock(String name, Material material)
+	{
+		super(material);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setHardness(5.0f)
+	}
+}

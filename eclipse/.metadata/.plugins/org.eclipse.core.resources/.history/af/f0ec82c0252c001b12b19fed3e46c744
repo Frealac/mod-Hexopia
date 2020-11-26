@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "i i",
+        "   "
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:xuranium"
+            }
+    },
+    "result": {
+        "item": "hexopiamod:etix_helmet",
+        "count": 1
+    }
+}

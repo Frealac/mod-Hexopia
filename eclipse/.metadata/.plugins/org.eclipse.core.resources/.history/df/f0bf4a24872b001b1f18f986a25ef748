@@ -1,0 +1,5 @@
+package com.hexopia.mod.entity;
+
+public class EntityWither {
+
+}

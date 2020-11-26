@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:diarium"
+            }
+    },
+    "result": {
+        "item": "hexopiamod:diarium_chesplate",
+        "count": 1
+    }
+}

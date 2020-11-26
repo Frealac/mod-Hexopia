@@ -1,0 +1,7 @@
+package com.hexopia.mod.objects.items.tools;
+
+import net.minecraft.item.Item;
+
+public class ItemHammer3 extends Item {
+
+}

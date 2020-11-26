@@ -1,0 +1,8 @@
+package com.hexopia.mod.entity;
+
+public class Snippet {
+	public static void main(String[] args) {
+		EntityWither.class
+	}
+}
+

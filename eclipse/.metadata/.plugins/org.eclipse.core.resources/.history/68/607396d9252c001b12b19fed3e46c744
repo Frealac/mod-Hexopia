@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:pikarium"
+            }
+    },
+    "result": {
+        "item": "hexopiamod:etix_chesplate",
+        "count": 1
+    }
+}

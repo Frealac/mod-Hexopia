@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "///",
+        "///",
+        "///"
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:pikarium"
+        },
+        "/": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "hexopiamod:pikarium",
+        "count": 1
+    }
+}

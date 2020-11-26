@@ -1,0 +1,37 @@
+package com.hexopia.mod.client.renderer.entity;
+
+import com.hexopia.mod.client.models.entity.ModelScorpion;
+import com.hexopia.mod.objects.entity.EntitySpectre;
+import com.hexopia.mod.util.Reference;
+
+import net.minecraft.client.renderer.entity.RenderLiving;
+import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+
+@SideOnly(Side.CLIENT)
+public class RenderSpectre<T extends EntitySpectre> extends RenderLiving<T>
+{
+    private static final ResourceLocation SPECTRE_TEXTURES = new ResourceLocation(Reference.MODID + ":textures/models/entity/spectre.png");
+
+    public RenderSpectre(RenderManager renderManagerIn)
+    {
+        super(renderManagerIn, new ModelScorpion(), 1.0F);
+    }
+
+    protected float getDeathMaxRotation(T entityLivingBaseIn)
+    {
+        return 180.0F;
+    }
+
+    /**
+     * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+     */
+    protected ResourceLocation getEntityTexture(T entity)
+    {
+        return SPECTRE_TEXTURES;
+    }
+}

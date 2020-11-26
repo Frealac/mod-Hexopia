@@ -1,0 +1,39 @@
+package com.hexopia.mod.util.handlers;
+
+public class RenderHandler
+{
+    public static void registerEntityRenders()
+    {
+        RenderingRegistry.registerEntityRenderingHandler(EntityScorpion.class, new IRenderFactory<EntityScorpion>()
+        {
+
+            @Override
+            public Render<? super EntityScorpion> createRenderFor(RenderManager manager)
+            {
+                return new RenderScorpion<EntityScorpion>(manager);
+            }});
+    }
+    
+    public static void registerCustomMeshesAndStates()
+    {
+        ModelLoader.setCustomMeshDefinition(Item.getItemFromBlock(BlockInit.OIL), new ItemMeshDefinition()
+        {
+            
+            @Override
+            public ModelResourceLocation getModelLocation(ItemStack stack)
+            {
+                return new ModelResourceLocation("tuto:oil", "fluid");
+            }
+        });
+        
+        ModelLoader.setCustomStateMapper(BlockInit.OIL, new StateMapperBase()
+        {
+            
+            @Override
+            protected ModelResourceLocation getModelResourceLocation(IBlockState state)
+            {
+                return new ModelResourceLocation("tuto:oil", "fluid");
+            }
+        });
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2020-11-22 22:17:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "taiga": "2020-11-22 22:17:14 +0100"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2020-11-22 22:17:25 +0100"
+    },
+    "done": true
+  }
+}

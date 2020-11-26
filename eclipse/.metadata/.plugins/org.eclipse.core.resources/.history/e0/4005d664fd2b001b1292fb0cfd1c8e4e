@@ -1,0 +1,18 @@
+package com.hexopia.mod.init;
+
+import javax.swing.text.html.parser.Entity;
+
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+
+public class EntityInit
+{
+	public static void registerEntities()
+	{
+		
+	}
+	
+	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1,int color2)
+	{
+		EntityRegistry.registerModEntity(registryName, entityClass, entityName, id, mod, trackingRange, updateFrequency, sendsVelocityUpdates, eggPrimary, eggSecondary);
+	}
+}

@@ -19,12 +19,16 @@ public class WorldGenCustomOres implements IWorldGenerator
 	
 	private WorldGenerator ore_xuranium;
 	private WorldGenerator ore_pikarium;
+	private WorldGenMinable ore_diarium;
+	private WorldGenMinable ore_etix;
 	
 	
 	public WorldGenCustomOres() 
 	{
 		ore_xuranium = new WorldGenMinable(BlockInit.ORE_XURANIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
 		ore_pikarium = new WorldGenMinable(BlockInit.ORE_PIKARIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
+		ore_diarium = new WorldGenMinable(BlockInit.ORE_DIARIUM.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
+		ore_etix = new WorldGenMinable(BlockInit.ORE_ETIX.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
 	}
 	
 	@Override
@@ -34,8 +38,10 @@ public class WorldGenCustomOres implements IWorldGenerator
 		switch (world.provider.getDimension()) 
 		{
 		case 0:
-			runGenerator(ore_xuranium, world, random, chunkX, chunkZ, 30, 2, 15);
-			runGenerator(ore_pikarium, world, random, chunkX, chunkZ, 20, 2, 9);
+			runGenerator(ore_xuranium, world, random, chunkX, chunkZ, 20, 2, 15);
+			runGenerator(ore_pikarium, world, random, chunkX, chunkZ, 15, 2, 9);
+			runGenerator(ore_diarium, world, random, chunkX, chunkZ, 10, 6, 15);
+			runGenerator(ore_etix, world, random, chunkX, chunkZ, 5, 2, 8);
 			break;
 		}
 		

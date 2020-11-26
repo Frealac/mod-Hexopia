@@ -1,0 +1,8 @@
+package com.hexopia.mod.objects.blocks;
+
+import net.minecraft.block.Block;
+
+public class CaveBlock extends Block
+{
+
+}

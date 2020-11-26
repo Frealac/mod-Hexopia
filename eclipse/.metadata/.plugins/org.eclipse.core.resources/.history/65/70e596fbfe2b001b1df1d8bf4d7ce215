@@ -1,0 +1,16 @@
+package com.hexopia.mod.objects.blocks;
+
+import com.hexopia.mod.util.interfaces.IHasModel;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockTNT extends Block implements IHasModel
+{
+
+	public BlockTNT(Material materialIn) {
+		super(materialIn);
+		// TODO Auto-generated constructor stub
+	}
+  
+}

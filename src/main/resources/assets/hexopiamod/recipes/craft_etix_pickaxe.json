@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        " / ",
+        " / "
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:etix"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hexopiamod:etix_pickaxe",
+        "count": 1
+    }
+}

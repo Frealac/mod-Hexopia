@@ -11,5 +11,6 @@ public class RecipesHandler
 	public static void registerRecipes()
 	{
 		GameRegistry.addSmelting(BlockInit.ORE_XURANIUM, new ItemStack(ItemInit.XURANIUM, 1), 5.0f);
+		GameRegistry.addSmelting(BlockInit.ORE_DIARIUM, new ItemStack(ItemInit.DIARIUM, 1), 5.0f);
 	}
 }

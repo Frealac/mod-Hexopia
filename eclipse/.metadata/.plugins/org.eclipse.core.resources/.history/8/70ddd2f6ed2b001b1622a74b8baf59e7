@@ -1,0 +1,5 @@
+package com.hexopia.mod.objects.fluids;
+
+public class FluidOil {
+
+}

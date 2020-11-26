@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " i ",
+        " i ",
+        " / "
+    ],
+    "key": {
+        "i": {
+            "item": "hexopiamod:etix"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hexopiamod:etix_sword",
+        "count": 1
+    }
+}

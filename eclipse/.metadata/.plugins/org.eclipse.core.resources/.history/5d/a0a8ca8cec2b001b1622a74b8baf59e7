@@ -1,0 +1,20 @@
+package com.hexopia.mod.objects.entity;
+
+import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.world.World;
+
+public class EntitySpectre extends EntityZombie
+{
+
+	public EntitySpectre(World worldIn) 
+	{
+		super(worldIn);
+	}
+	
+	@Override
+	protected void applyEntityAttributes()
+	{
+		
+	}
+
+}

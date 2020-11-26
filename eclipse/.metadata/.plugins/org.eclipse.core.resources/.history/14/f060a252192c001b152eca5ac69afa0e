@@ -1,0 +1,12 @@
+package com.hexopia.mod.objects.items.tools;
+
+import net.minecraft.item.Item;
+
+//les variables 
+
+public static final String[] bowPullIconNameArray = new String[] {"1", "2", "3"}; // c'est pour les textures 
+@SideOnly(Side.CLIENT) 
+private IIcon[] iconArray;
+public class ItemArcMod extends Item {
+
+}

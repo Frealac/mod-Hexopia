@@ -1,0 +1,10 @@
+{
+    "variants":
+    {
+        "normal":
+        {
+            "model": "hexopiamod:ore_diarium"
+        }
+    }
+}
+etix_block

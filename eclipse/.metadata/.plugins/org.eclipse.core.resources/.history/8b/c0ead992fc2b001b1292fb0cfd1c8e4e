@@ -1,0 +1,26 @@
+package com.hexopia.mod.objects.entity;
+
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.world.World;
+
+public class EntitySpectre extends EntityZombie
+{
+
+	public EntitySpectre(World worldIn) 
+	{
+		super(worldIn);
+	}
+	
+	@Override
+	protected void applyEntityAttributes()
+	{
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(50.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.5D);
+        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(6.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(30);
+	}
+
+}

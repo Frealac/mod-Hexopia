@@ -1,0 +1,14 @@
+package com.hexopia.mod.objects.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockSpecial2 extends Block {
+
+    public BlockSpecial2(String name, Material material)
+    {
+		super(materialIn);
+		// TODO Auto-generated constructor stub
+	}
+
+}

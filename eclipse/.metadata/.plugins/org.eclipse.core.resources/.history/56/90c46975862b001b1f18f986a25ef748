@@ -1,0 +1,7 @@
+package com.hexopia.mod.proxy;
+
+import net.minecraft.client.gui.GuiScreen;
+
+public class GuiCustomMainMenu extends GuiScreen {
+
+}

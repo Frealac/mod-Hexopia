@@ -1,0 +1,10 @@
+package com.hexopia.mod.objects.blocks;
+
+import com.hexopia.mod.util.interfaces.IHasModel;
+
+import net.minecraft.block.Block;
+
+public class BlockTNT extends Block implements IHasModel
+{
+  
+}

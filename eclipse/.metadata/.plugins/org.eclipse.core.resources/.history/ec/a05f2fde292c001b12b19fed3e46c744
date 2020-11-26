@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Hexopiamod",
+  "name": "Hexopia Mod",
+  "description": "Hexopia un serveur Modder Génial grace au mod Hexopia",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

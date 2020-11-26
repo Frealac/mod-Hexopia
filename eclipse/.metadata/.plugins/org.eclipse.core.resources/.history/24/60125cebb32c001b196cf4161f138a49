@@ -1,0 +1,16 @@
+package com.hexopia.mod.inventory.slot;
+
+public class SlotBackPack extends Slot
+{
+	public SlotBackPack(IInventory inv, int index, int x, int y) {
+		super(inv, index, x, y);
+	}
+
+	/**
+	 * Method used to prevent backpack-ception (backpacks inside backpacks)
+	 */
+	@Override
+	public boolean isItemValid(ItemStack stack) {
+		return !(stack.getItem() instanceof ItemBackPack);
+	}
+}

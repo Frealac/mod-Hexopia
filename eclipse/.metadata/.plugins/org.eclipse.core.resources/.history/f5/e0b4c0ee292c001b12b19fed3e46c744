@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Hexopiamod",
+  "name": "Hexopia Mod",
+  "description": "Hexopia un serveur Modder Génial grace au mod Hexopia",
+  "version": "${V1}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Muffing"],
+  "credits": "HexopiaV1",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

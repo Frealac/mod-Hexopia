@@ -1,0 +1,20 @@
+package com.hexopia.mod.init;
+
+import javax.swing.text.html.parser.Entity;
+
+import com.hexopia.mod.Main;
+import com.hexopia.mod.objects.entity.EntityScorpion;
+import com.hexopia.mod.util.Reference;
+
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
+
+public class EntityInit
+{
+	public static void registerEntities()
+	{
+		
+	}
+	
+	privat static void registerEntity()
+}

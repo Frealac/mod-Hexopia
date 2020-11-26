@@ -1,0 +1,64 @@
+package com.hexopia.mod.proxy;
+
+import com.hexopia.mod.objects.items.tools.ItemBackPack;
+import com.hexopia.mod.util.handlers.ContainerBackPack;
+import com.hexopia.mod.util.handlers.GuiBackPack;
+import com.hexopia.mod.util.handlers.InventoryBackPack;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.IGuiHandler;
+
+public class CommonProxy 
+{
+	public void registerItemRenderer(Item item, int meta)
+	{
+		
+	}
+	
+	public void registerVariantRenderer(Item item, int meta, String filename, String id)
+	{
+		
+	}
+	
+	public void registerEntityRenderers()
+	{
+		
+	}
+	
+	public void preInit()
+	{
+		
+	}
+	
+    public void register() {}
+    
+    public class CommonProxy implements IGuiHandler
+    {
+        @Override
+        public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+            switch (ID) {
+            case 0:
+                // The last parameter must be a multiple of 9 (e.g: 9, 18, 27, 54)
+                // Condition to check if the player has the right item in hand
+                if (player.getHeldItem() == null || !(player.getHeldItem().getItem() instanceof ItemBackPack)) return null;
+                return new ContainerBackPack(player.inventory, new InventoryBackPack(player.getHeldItem(), 54));
+            }
+            return null;
+        }
+     
+        @Override
+        public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+            switch (ID) {
+            case 0:
+                // The last parameter must be a multiple of 9 (e.g: 9, 18, 27, 54)
+                // Condition to check if the player has the right item in hand
+                if (player.getHeldItem() == null || !(player.getHeldItem().getItem() instanceof ItemBackPack)) return null;
+                return new GuiBackPack(player.inventory, new InventoryBackPack(player.getHeldItem(), 54));
+            }
+            return null;
+        }
+    }
+	
+}
